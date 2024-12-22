@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 
 import styles from "./styles.module.css"
@@ -5,6 +6,7 @@ import ProductCard from '@/components/productCard/productCard';
 import Imag1 from "../../assets/4444.png";
 import Imag2 from "../../assets/book4.jpg";
 import Imag3 from "../../assets/papir.png";
+import { useRouter } from 'next/navigation';
 
 
 const products = [
@@ -13,7 +15,7 @@ const products = [
     name: "Услуги",
     // price: 10,
     image: Imag2,
-    link: "/https://1copy.ru/",
+    link: "https://1copy.ru/",
   },
   {
     id: 2,
@@ -38,6 +40,7 @@ const products = [
   },
 ];
 const page = () => {
+  const router=useRouter()
   return (
     <div className={styles.wrapp}>
       <div className={styles.wrapper}>
@@ -45,9 +48,9 @@ const page = () => {
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
-      {/* <button onClick={() => navigate(-1)}>
+      <button onClick={() => router.push("/")} className={styles.button}>
         {"<--"}Назад
-      </button> */}
+      </button>
     </div>
   );
 }
