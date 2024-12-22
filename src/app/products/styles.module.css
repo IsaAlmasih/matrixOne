@@ -1,8 +1,49 @@
-.wrapper {
-    /* background-color: black; */
+.wrapp {
+    background-image: url('../../assets/polka2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.wrappe {
+    background-color: blue;
+}
+
+
+@media (max-width: 390px) {
+.wrapp {
+    background-image: url('../../assets/polk.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding-top: 150px;
+}
+
+
 }

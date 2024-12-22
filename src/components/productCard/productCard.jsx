@@ -15,7 +15,7 @@ const ProductCard = ({ product }) => {
         height={200}
       />
       <h3 className={styles.name}>{product.name}</h3>
-      <p className={styles.price}>{product.price}p</p>
+      {/* <p className={styles.price}>{product.price}p</p> */}
       <button
         className={styles.button}
         onClick={() => alert("Товар добавлен в карзину")}
