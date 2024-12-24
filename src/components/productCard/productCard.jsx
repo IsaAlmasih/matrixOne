@@ -3,7 +3,11 @@
 import Image from "next/image";
 import styles from "./ProductCard.module.css";
 
+import useStore from "../../stores/cart";
+
 const ProductCard = ({ product }) => {
+  const addToCart = useStore((state) => state.addToCart);
+  const clearCart = useStore((state) => state.clearCart);
   return (
     <a href={product.link}>
     <div className={styles.card}>
@@ -15,10 +19,12 @@ const ProductCard = ({ product }) => {
         height={200}
       />
       <h3 className={styles.name}>{product.name}</h3>
-      {/* <p className={styles.price}>{product.price}p</p> */}
+      <p className={styles.price}>{product.price}p</p>
       <button
         className={styles.button}
-        onClick={() => alert("Товар добавлен в карзину")}
+        onClick={() =>{addToCart(
+          product
+        )}}
       >
         Добавить в корзину.
       </button>

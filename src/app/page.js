@@ -8,7 +8,9 @@ export default function Home() {
     <>
       <div className={styles.wrapper}>
         <div>
-          <textarea className={styles.text}>Выпущено тап 34.</textarea>
+          <div className={styles.text}>
+            Выпущено тап 34.
+          </div>
         </div>
         <div>
           <Link href={"/"} className={styles.text}>
@@ -16,9 +18,9 @@ export default function Home() {
           </Link>
         </div>
         <div>
-          <textarea className={styles.text}>
+          <div className={styles.text}>
             Бюджет Акционерного общества 680 рублей.
-          </textarea>
+          </div>
         </div>
         <div>
           <Link href={"/"} className={styles.text}>

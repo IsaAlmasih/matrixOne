@@ -7,6 +7,10 @@ import Imag1 from "../../assets/4444.png";
 import Imag2 from "../../assets/book4.jpg";
 import Imag3 from "../../assets/papir.png";
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+
+import Image from "next/image";
+import Imag4 from '../../assets/мкм.jpg'
 
 
 const products = [
@@ -43,6 +47,9 @@ const page = () => {
   const router=useRouter()
   return (
     <div className={styles.wrapp}>
+      <div>
+        <Link href={"/cart"} className={styles.cart}><Image src={Imag4} height={50} width={50} alt='Корзина'/></Link>
+      </div>
       <div className={styles.wrapper}>
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
