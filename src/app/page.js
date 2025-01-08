@@ -28,7 +28,7 @@ export default function Home() {
           </Link>
         </div>
         <div>
-          <Link href={"/"} className={styles.text}>
+          <Link href={"/keys"} className={styles.text}>
             Книга Ключи.
           </Link>
         </div>

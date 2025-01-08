@@ -1,8 +1,10 @@
-'use claent'
+'use client'
 // pages/cart.js
 import React from "react";
 import useStore from "../../stores/cart"; // Импортируйте ваш Zustand store
 import Head from "next/head";
+import styles from "./styles.module.css";
+import{useRouter} from "next/navigation"
 
 const CartPage = () => {
   const {
@@ -12,6 +14,8 @@ const CartPage = () => {
     removeFromCart,
     clearCart,
   } = useStore();
+
+  const router=useRouter()
 
   const handleIncrease = (itemId) => {
     increaseQuantity(itemId);
@@ -30,12 +34,7 @@ const CartPage = () => {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
-      <Head>
-        <title>Корзина</title>
-        <meta name="description" content="Страница корзины вашего магазина" />
-      </Head>
-      <h1>Корзина</h1>
+    <div className={styles.wrapper}>
       {cart.length === 0 ? (
         <p>Ваша корзина пуста.</p>
       ) : (
@@ -80,6 +79,9 @@ const CartPage = () => {
           </button>
         </div>
       )}
+      <button onClick={() => router.push("/products")} className={styles.button}>
+        {"<--"}Назад
+      </button>
     </div>
   );
 };
