@@ -8,11 +8,25 @@ export default function Home() {
     <>
       <div className={styles.wrapper}>
         <div>
-          <div className={styles.text}>
-            Выпущено тап 34.
-          </div>
+          <div className={styles.text}>Выпущено тап 34.</div>
         </div>
-        <div>
+
+        <nav className={styles.navigation}>
+          <Link href={"/"} className={styles.text}>
+            Стоимость тапы 20 рублей.
+          </Link>
+          <Link href={"/"} className={styles.text}>
+            Стоимость тапы 20 рублей.
+          </Link>
+          <Link href={"/"} className={styles.text}>
+            Стоимость тапы 20 рублей.
+          </Link>
+          <Link href={"/products"} className={styles.text}>
+            Магазин
+          </Link>
+        </nav>
+
+        {/* <div>
           <Link href={"/"} className={styles.text}>
             Стоимость тапы 20 рублей.
           </Link>
@@ -36,7 +50,8 @@ export default function Home() {
           <Link href={"/products"} className={styles.text}>
             Наш Магазин.
           </Link>
-        </div>
+        </div> */}
+
         <MatrixRain></MatrixRain>
       </div>
     </>
