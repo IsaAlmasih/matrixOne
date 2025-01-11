@@ -1,0 +1,40 @@
+.wrapper {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    color: rgb(138, 255, 0);
+    font-size: 30px;
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.wrapper img {
+    max-width: 300px;
+    height: auto;
+}
+
+.wrappe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 390px) {
+    .wrapper {
+        font-size: 20px;
+    }
+    .wrapper img {
+    max-width: 100px;
+    height: auto;
+}
+    .imges {
+    display: flex;
+    flex-direction: row;
+    }
+}

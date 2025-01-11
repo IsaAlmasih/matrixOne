@@ -1,8 +1,11 @@
 "use client";
 import React from "react";
-import styles from "./Price.module.css";
+import styles from "./styles.module.css";
 
-const Page = () => {
+import { useRouter } from "next/navigation";
+
+const page = () => {
+const router=useRouter()
   return (
     <div className={styles.wrapper}>
       <center>
@@ -18,9 +21,13 @@ const Page = () => {
           нашей формирующийся компании. По всем вопросам напишите по адресу
           выше.
         </p>
-      </center>
+      </center>      
+      <button onClick={() => router.push("/")} className={styles.butt}>
+                {"<--"}Назад
+      </button>
     </div>
+
   );
 };
 
-export default Page;
+export default page;

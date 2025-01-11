@@ -10,16 +10,15 @@ export default function Home() {
         <div>
           <div className={styles.text}>Выпущено тап 34.</div>
         </div>
-
         <nav className={styles.navigation}>
-          <Link href={"/"} className={styles.text}>
-            Стоимость тапы 20 рублей.
+          <Link href={"/price"} className={styles.text}>
+            Учение.
           </Link>
           <Link href={"/"} className={styles.text}>
-            Стоимость тапы 20 рублей.
+            Акционерное Общество Матрица.
           </Link>
-          <Link href={"/"} className={styles.text}>
-            Стоимость тапы 20 рублей.
+          <Link href={"/keys"} className={styles.text}>
+            Книги.
           </Link>
           <Link href={"/products"} className={styles.text}>
             Магазин

@@ -1,18 +1,26 @@
 "use client";
-import React from 'react'
+import React, { useRef } from 'react'
 
-import styles from './Keys.module.css'
+import styles from './styles.module.css'
 import { Link } from 'next/link';
 
+import imag from './154.jpg';
+import imag1 from "./11111.jpg";
+
 const Page = () => {
+  const img1 = useRef(null); //useRef - это ссылка (null) = это значение. const img1 - это то куда пишем ссылку
+  const onClick = () => {img1.current.style.width="400px"};
   return (
     <div className={styles.wrapper}>
-      <img src="11111.jpg" />
-      {/* <a href="../../assets/files/Book_Keys.pdf" download>
-        <button>Книга Ключи</button>
-      </a> */}
-      <a href="Vehnii.docx">Книга Вечный Завет.</a>
-      <a href="/">Вернутся на главную.</a>
+      <div className={styles.imges}>
+        <img src={imag1.src}ref={img1}onClick={onClick} />
+        <img src={imag.src} />
+      </div>
+      <div className={styles.wrappe}>
+        <a href="112.pdf" >Книга Вечный Завет.</a>
+        <a href="1001.pdf">Книга Ключи.</a>
+        <a href="/">Вернутся на главную.</a>
+      </div>
     </div>
   );
 }
