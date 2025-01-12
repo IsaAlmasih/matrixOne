@@ -3,9 +3,10 @@ import React from "react";
 
 import styles from "./styles.module.css";
 import ProductCard from "@/components/productCard/productCard";
-import Imag1 from "../../assets/4444.png";
+import Imag1 from "../../assets/cat.jpg";
 import Imag2 from "../../assets/book4.jpg";
 import Imag3 from "../../assets/papir.png";
+import Imag5 from "../../assets/2015.jpg";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -17,7 +18,7 @@ const products = [
     id: 10,
     name: "Услуги",
     // price: 10,
-    image: Imag2,
+    image: Imag1,
     // link: "https://1copy.ru/",
     link: "/products/services",
 
@@ -27,7 +28,7 @@ const products = [
     id: 20,
     name: "Папирус.",
     // price: 20,
-    image: Imag2,
+    image: Imag3,
     link: "/products/papirus",
     // isCategory: false,
   },
@@ -43,7 +44,7 @@ const products = [
     id: 40,
     name: "Гирлянды",
     // price: 30,
-    image: Imag2,
+    image: Imag5,
     link: "/products/hyrlands",
     // isCategory: false,
   },

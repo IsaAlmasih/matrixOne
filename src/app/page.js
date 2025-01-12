@@ -6,15 +6,11 @@ import { MatrixRain } from "../components/MatrixRain/MatrixRain";
 export default function Home() {
   return (
     <>
-      <div className={styles.wrapper}>
-        <div>
-          <div className={styles.text}>Выпущено тап 34.</div>
-        </div>
-        <nav className={styles.navigation}>
-          <Link href={"/price"} className={styles.text}>
+        <nav className={styles.wrapper}>
+          <Link href={"/"} className={styles.text}>
             Учение.
           </Link>
-          <Link href={"/"} className={styles.text}>
+          <Link href={"/price"} className={styles.text}>
             Акционерное Общество Матрица.
           </Link>
           <Link href={"/keys"} className={styles.text}>
@@ -23,36 +19,8 @@ export default function Home() {
           <Link href={"/products"} className={styles.text}>
             Магазин
           </Link>
-        </nav>
-
-        {/* <div>
-          <Link href={"/"} className={styles.text}>
-            Стоимость тапы 20 рублей.
-          </Link>
-        </div>
-        <div>
-          <div className={styles.text}>
-            Бюджет Акционерного общества 680 рублей.
-          </div>
-        </div>
-        <div>
-          <Link href={"/"} className={styles.text}>
-            Школа призрака.
-          </Link>
-        </div>
-        <div>
-          <Link href={"/keys"} className={styles.text}>
-            Книга Ключи.
-          </Link>
-        </div>
-        <div>
-          <Link href={"/products"} className={styles.text}>
-            Наш Магазин.
-          </Link>
-        </div> */}
-
         <MatrixRain></MatrixRain>
-      </div>
+        </nav>
     </>
   );
 }

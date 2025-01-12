@@ -6,10 +6,11 @@ import { Link } from 'next/link';
 
 import imag from './154.jpg';
 import imag1 from "./11111.jpg";
+import { MatrixRain } from '@/components/MatrixRain/MatrixRain';
 
 const Page = () => {
   const img1 = useRef(null); //useRef - это ссылка (null) = это значение. const img1 - это то куда пишем ссылку
-  const onClick = () => {img1.current.style.width="400px"};
+  const onClick = () => {img1.current.style.width="250px"};
   return (
     <div className={styles.wrapper}>
       <div className={styles.imges}>

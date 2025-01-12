@@ -14,7 +14,7 @@
 }
 
 .wrapper img {
-    max-width: 300px;
+    max-width: 230px;
     height: auto;
 }
 
@@ -25,16 +25,39 @@
     gap: 10px;
 }
 
-@media (max-width: 390px) {
+
+@media (max-width: 400px) {
     .wrapper {
         font-size: 20px;
     }
     .wrapper img {
     max-width: 100px;
     height: auto;
-}
-    .imges {
     display: flex;
-    flex-direction: row;
-    }
 }
+}
+
+
+@media (max-width: 500px) {
+    .wrapper {
+    font-size: 20px;
+    }
+    .wrapper img {
+    max-width: 200px;
+    height: auto;
+    gap: 10px;
+}
+}
+
+
+@media (max-width: 610px) {
+    .wrapper {
+    font-size: 20px;
+    }
+    .wrapper img {
+    max-width: 250px;
+    height: auto;
+    gap: 10px;
+}
+}
+
