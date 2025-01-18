@@ -1,9 +1,9 @@
 "use client"
 import React, { use, useEffect, useState } from 'react'
-import styles from './styles.module.css'
+import styles from './styles1.module.css'
 import { MatrixRain } from '@/components/MatrixRain/MatrixRain';
 
-import styles1 from "./Book.module.css";
+import styles1 from "./styles.module.css";
 import HTMLFlipBook from "react-pageflip";
 
 import image1 from "../../../assets/papir/papir6.jpg";
