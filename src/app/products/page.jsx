@@ -12,6 +12,7 @@ import Link from "next/link";
 
 import Image from "next/image";
 import Imag4 from "../../assets/мкм.jpg";
+import { MatrixRain } from "@/components/MatrixRain/MatrixRain";
 
 const products = [
   {
@@ -67,7 +68,9 @@ const page = () => {
       <button onClick={() => router.push("/")} className={styles.button}>
         {"<--"}Назад
       </button>
+      <MatrixRain></MatrixRain>
     </div>
+    
   );
 };
 

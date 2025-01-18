@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
 
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   width: 100%;
   padding: 32px;
   position: fixed;
@@ -23,6 +23,7 @@
 
 .navigation {
   font-size: 20px;
+  color: #ff0101;
   display: flex;
   gap: 12px;
 }
@@ -32,6 +33,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(255, 0, 0);
   gap: 10px;
 }
 
