@@ -26,14 +26,29 @@
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 390px) {
     .wrapper {
         font-size: 20px;
     }
     .wrapper img {
-    max-width: 100px;
+    max-width: 100px !important;
     height: auto;
     display: flex;
+}
+    .imges {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .wrapper {
+    font-size: 20px;
+    }
+    .wrapper img {
+    max-width: 200px;
+    height: auto;
+    gap: 10px;
 }
 }
 
