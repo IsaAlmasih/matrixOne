@@ -53,7 +53,7 @@ const ProductCard = ({ product }) => {
       <a href={product.link}>
         <button>Описание</button>
       </a> */}
-      <button
+      {/* <button
         className={styles.button}
         onClick={() => {
           if (isBuyed) {
@@ -65,8 +65,8 @@ const ProductCard = ({ product }) => {
           }
         }}
       >
-        {isBuyed ? "Удалить из корзины" : "Добавить в корзину"}
-      </button>
+        {isBuyed ? "Удалить из корзины" : "Перейти"}
+      </button> */}
       {isBuyed && (
         <>
           <span>

@@ -30,7 +30,7 @@ import { useRouter } from 'next/navigation';
 
 const page = () => {
   const [isMobile,setIsMobile]=useState(false)
-  const [width, setWidth]=useState(screen.width)
+  const [width, setWidth]=useState(1920)
   useEffect(()=>{
     setWidth(screen.width);
     
