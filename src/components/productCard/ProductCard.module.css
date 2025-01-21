@@ -1,13 +1,15 @@
 /* components/ProductCard.module.css */
 .card {
-    /* background-color: #ffffff; */
-    border: 1px solid #000000;
+    background-color: #ffffff;
+    border: 1px solid #cd2020;
     border-radius: 8px;
     padding: 16px;
     text-align: center;
     width: 250px;
     transition: transform 0.2s;
+    font-size: 30px;
     gap: 10px;
+    margin: 8px;
 }
 
 .card:hover {
@@ -19,6 +21,7 @@
     /* max-height: 180px !important; */
     height: auto;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .name {
