@@ -4,6 +4,7 @@ import styles from './styles.module.css'
 import { MatrixRain } from '@/components/MatrixRain/MatrixRain';
 
 import { FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaArrowCircleRight } from "react-icons/fa";
 import ImageWithModal from '@/components/ImageWithModal/ImageWithModal';
 
 import styles1 from "./styles1.module.css";
@@ -106,7 +107,10 @@ const page = () => {
           {" "}
           <FaArrowAltCircleLeft />{" "}
         </button>
-        <button onClick={() => book.current.pageFlip().flipNext()}> +1 </button>
+        <button onClick={() => book.current.pageFlip().flipNext()}>
+          {" "}
+          <FaArrowCircleRight />
+        </button>
       </div>
       <button
         onClick={() => router.push("/products")}
