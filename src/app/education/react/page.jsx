@@ -1,12 +1,14 @@
-"use client"
-import Book from '@/components/book/Book'
-import React from 'react'
+"use client";
+import Book from "@/components/book/Book";
+import React from "react";
 
-import styles from "./styles.module.css"
-import { useRouter } from 'next/navigation'
+import styles from "./styles.module.css";
+import { useRouter } from "next/navigation";
+
+import { MatrixRain } from "@/components/MatrixRain/MatrixRain";
 
 const page = () => {
-  const router=useRouter()
+  const router = useRouter();
   return (
     <div className={styles.wrapper}>
       <div>
@@ -19,8 +21,9 @@ const page = () => {
       >
         {"<--"}Назад
       </button>
+      <MatrixRain></MatrixRain>
     </div>
   );
-}
+};
 
-export default page
+export default page;

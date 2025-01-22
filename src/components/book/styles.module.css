@@ -1,78 +1,75 @@
 .wrapper {
-    background-color: rgb(0, 0, 0);
-    background-repeat: no-repeat;
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
 }
 
 .wrappe {
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 300px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
 }
 
 .book {
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 .button {
-    font-size: 20px;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    color: rgb(254, 7, 7);
-    background-color: transparent;
-    border: 30;
-    z-index: 100;
+  font-size: 20px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  color: rgb(254, 7, 7);
+  background-color: transparent;
+  border: 30;
+  z-index: 100;
 }
 
+/* Стили страниц */
 .firstPage {
-    background-color: blueviolet;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  padding: 16px;
+  background-color: rgb(248, 248, 248);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  overflow-y: auto;
 }
 
 .secondPage {
-    background-color: aqua;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  padding: 16px;
+  background-color: aqua;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-y: auto;
 }
 
 .thirdPage {
-    background-color: blue;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; 
-}
+  padding: 16px;
 
-@media screen and (max-width: 576px) {
-    /* .firstPage,
-    .secondPage,
-    .thirdPage {
-        left: 15px !important;
-        right: 15px !important;
-        min-width: calc(100% - 30px) !important;
-        width: calc(100% - 30px) !important; */
-    /* } */
+  background-color: blue;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-y: auto;
 }
-
 
 @media (max-width: 380px) {
- .wrapper {
+  .wrapper {
     height: 50% !important;
     width: 70%;
- }
+  }
   .book {
     min-width: 0 !important;
     min-height: 0px !important;
- }
+  }
 }

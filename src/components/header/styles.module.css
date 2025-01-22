@@ -37,12 +37,25 @@
   gap: 10px;
 }
 
+.header-btn {
+  padding: 8px 12px;
+  background-color: black;
+  border: 1px solid red;
+  color: #ff0101;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.header-btn:hover {
+  background-color: #ff0101;
+  color: black;
+}
 
 .openPopup {
   display: none;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 565px) {
   .header {
     padding: 12px;
   }

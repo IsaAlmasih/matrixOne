@@ -11,6 +11,7 @@ import image2 from "../../assets/141.jpg";
 import image3 from "../../assets/141.jpg";
 
 import { useRouter } from "next/navigation";
+import { MatrixRain } from "@/components/MatrixRain/MatrixRain";
 const page = () => {
   const images = [image.src, image1.src, image2.src];
   const images2 = [
@@ -41,25 +42,26 @@ const page = () => {
   ];
   const router = useRouter();
   return (
-    <div className={styles.mainWrapper}>
-      <div className={styles.wrapper}>
-        <div className={styles.text}>Выберите интересующую тему.</div>
-        <div className={styles.image}>
-          <div className={styles.images}>
-            {" "}
-            {images2.map((src, index) => (
-              <ProductCard key={index} product={src} />
-            ))}
+      <div className={styles.mainWrapper}>
+        <div className={styles.wrapper}>
+          <div className={styles.text}>Выберите интересующую тему.</div>
+          <div className={styles.image}>
+            <div className={styles.images}>
+              {" "}
+              {images2.map((src, index) => (
+                <ProductCard key={index} product={src} />
+              ))}
+            </div>
           </div>
+          <button
+            onClick={() => router.push("/products")}
+            className={styles.button}
+          >
+            {"<--"}Назад
+          </button>
         </div>
-        <button
-          onClick={() => router.push("/products")}
-          className={styles.button}
-        >
-          {"<--"}Назад
-        </button>
+        <MatrixRain></MatrixRain>
       </div>
-    </div>
   );
 };
 

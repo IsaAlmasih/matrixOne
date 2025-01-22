@@ -10,6 +10,7 @@ import image2 from "../../../assets/book4.jpg";
 import { useRouter } from "next/navigation";
 
 import ProductCard from "@/components/productCard/productCard";
+import Category from "@/components/Category/Category";
 
 const books = [
   {
@@ -26,7 +27,7 @@ const books = [
   {
     id: 2,
     type: "book",
-    image,
+    image: image1,
     name: "Название книги 2",
     isbn: 123125135135,
     description: "Краткое описание",
@@ -37,7 +38,7 @@ const books = [
   {
     id: 3,
     type: "book",
-    image,
+    image: image2,
     name: "Название книги 3",
     isbn: 123125135135,
     description: "Краткое описание",
@@ -49,11 +50,8 @@ const books = [
     id: 4,
     type: "book",
     image,
-    name: "Название книги 4",
+    name: "Здесь может быть ваша книга",
     isbn: 123125135135,
-    description: "Краткое описание",
-    price: 2000,
-    author: "Pushkin",
     link: "",
   },
 ];
@@ -66,12 +64,16 @@ const page = () => {
       <div className={styles.text}>Это страница книг!</div>
       <div className={styles.image}>
         Книги
-        <div className={styles.images}>
+        <div className="category-list">
           {/* {" "}
           {images.map((src, index) => (
             <img key={index} src={src} />
           ))} */}
-          {books && books.map((book) => <ProductCard product={book} />)}
+          {/* {books && books.map((book) => <ProductCard product={book} />)} */}
+          {books &&
+            books.map(({ id, name, image, link }) => (
+              <Category id={id} categoryName={name} image={image} href={link} />
+            ))}
         </div>
       </div>
       <button
