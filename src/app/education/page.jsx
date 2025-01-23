@@ -42,26 +42,26 @@ const page = () => {
   ];
   const router = useRouter();
   return (
-      <div className={styles.mainWrapper}>
-        <div className={styles.wrapper}>
-          <div className={styles.text}>Выберите интересующую тему.</div>
-          <div className={styles.image}>
-            <div className={styles.images}>
-              {" "}
-              {images2.map((src, index) => (
-                <ProductCard key={index} product={src} />
-              ))}
-            </div>
+    <div className={styles.mainWrapper}>
+      <div className={styles.wrapper}>
+        <div className={styles.text}>Выберите интересующую тему.</div>
+        <div className={styles.image}>
+          <div className={styles.images}>
+            {" "}
+            {images2.map((src, index) => (
+              <ProductCard key={index} product={src} />
+            ))}
           </div>
-          <button
-            onClick={() => router.push("/products")}
-            className={styles.button}
-          >
-            {"<--"}Назад
-          </button>
         </div>
-        <MatrixRain></MatrixRain>
+        <button
+          onClick={() => router.push("/education")}
+          className={styles.button}
+        >
+          {"<--"}Назад
+        </button>
       </div>
+      <MatrixRain></MatrixRain>
+    </div>
   );
 };
 

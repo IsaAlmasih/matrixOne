@@ -49,11 +49,11 @@ const ProductCard = ({ product }) => {
         <h3 className={styles.name}>{product.name}</h3>
       </Link>
 
-      <p className={styles.price}>{product.price}p</p>
+      {/* <p className={styles.price}>{product.price}p</p> */}
       <a href={product.link}>
-        <button>Описание</button>
+        {/* <button>Описание</button> */}
       </a>
-      <button
+      {/* <button
         className={styles.button}
         onClick={() => {
           if (isBuyed) {
@@ -66,11 +66,11 @@ const ProductCard = ({ product }) => {
         }}
       >
         {isBuyed ? "Удалить из корзины" : "Перейти"}
-      </button>
+      </button> */}
       {isBuyed && (
         <>
           <span>
-            {product.name} (x{quantity}) - {product.price}₽
+            {product.name} (x{quantity}) - {product.price}
           </span>
           <button
             onClick={() => handleIncrease(product.id)}

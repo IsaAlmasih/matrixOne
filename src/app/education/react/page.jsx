@@ -16,7 +16,7 @@ const page = () => {
       </div>
       <Book></Book>
       <button
-        onClick={() => router.push("/products")}
+        onClick={() => router.push("/education")}
         className={styles.button}
       >
         {"<--"}Назад
