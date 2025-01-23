@@ -46,10 +46,10 @@
   cursor: pointer;
 }
 
-.header-btn:hover {
-  background-color: #ff0101;
+/* .header-btn:hover {
+  background-color: #fffdfd;
   color: black;
-}
+} */
 
 .openPopup {
   display: none;

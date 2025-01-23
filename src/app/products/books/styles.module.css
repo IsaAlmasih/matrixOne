@@ -28,3 +28,7 @@ object-fit: cover;
     display: flex;
     gap: 30px;
 }
+
+.button {
+    background-color: aqua;
+}
